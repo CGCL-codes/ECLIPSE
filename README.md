@@ -58,6 +58,7 @@ python purification.py --poison EM
 - **_Route 2: Or you can directly use the purified datasets:_**
   - Please download 8 types of CIFAR-10 purified datasets at [purified-datasets]().
   - Save these purified datasets in ```ECLIPSE/purified_data/cifar10/test2000ps8000/100/250000```
+  - Note: The poisoned and purified datasets by model-dependent unlearnable schemes including EM, REM, EFP, and SEP are all crafted based on ResNet18 architecture.
 **********************************************************************************************
 
 - **Perform Training (with lightweight corruption compensation module)**
