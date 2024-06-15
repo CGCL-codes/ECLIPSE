@@ -55,7 +55,7 @@ pip install -r requirements.txt
 python purification.py --poison EM
 ```
 **********************************************************************************************
-- **_Route 2: Or you can directly download the purified datasets to use:_**
+- **_Route 2: Or you can directly use the purified datasets:_**
   - Please download 8 types of CIFAR-10 purified datasets at [purified-datasets]().
   - Save these purified datasets in ```ECLIPSE/purified_data/cifar10/test2000ps8000/100/250000```
 **********************************************************************************************
