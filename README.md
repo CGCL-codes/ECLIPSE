@@ -37,13 +37,25 @@ conda create -n ECLIPSE python=3.9
 conda activate ECLIPSE
 pip install -r requirements.txt
 ```
+ 
 
-- **File organization**
 
-
-- **Download the sprase trained diffusion model checkpoint**
-  - Please download the diffusion checkpoint (training the diffusion model with randomly selected 2000 test CIFAR10 images, _M_=4, _I_=250K) at: [ema_0.9999_250000.pt](https://drive.google.com/drive/folders/1_L8p-mH2W383LspXuYsZPbksA9Hn2eTq). Note that our diffusion training process is based on the [Improved diffusion repository](https://github.com/openai/improved-diffusion).
+- **Download the sparse trained diffusion model checkpoint**
+  - Please download the diffusion checkpoint (training the diffusion model with randomly selected 2000 test CIFAR-10 images, _M_=4, _I_=250K) at: [ema_0.9999_250000.pt](https://drive.google.com/drive/folders/1_L8p-mH2W383LspXuYsZPbksA9Hn2eTq). Note that our diffusion training process is based on the [Improved diffusion repository](https://github.com/openai/improved-diffusion).
+  - Save this checkpoint in ```ECLIPSE/diff_ckpt/cifar10/test2000ps8000```
 
 - **Download the clean-label indiscriminate poisoned datasets (unlearnable datasets)**
-  - Please download 8 types of unlearnable datasets at [unlearnable-examples](https://drive.google.com/drive/folders/1KzHl0H-CfkXeBqyLhIw8l1NimQTzQx1_).
+  - Please download 8 types of CIFAR-10 unlearnable datasets at [unlearnable-examples](https://drive.google.com/drive/folders/1KzHl0H-CfkXeBqyLhIw8l1NimQTzQx1_).
+  - Save these unlearnable datasets in ```ECLIPSE/poisoned_data/cifar10```
+
+
+
+
+
+
+
+
+
+
+
 
