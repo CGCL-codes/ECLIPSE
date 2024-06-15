@@ -38,7 +38,8 @@ conda activate ECLIPSE
 pip install -r requirements.txt
 ```
  
-
+**********************************************************************************************
+- **Route 1: Purify poisoned datasets by yourself through the next three steps:**
 
 - **Download the sparse trained diffusion model checkpoint**
   - Please download the diffusion checkpoint (training the diffusion model with randomly selected 2000 test CIFAR-10 images, _M_=4, _I_=250K) at: [ema_0.9999_250000.pt](https://drive.google.com/drive/folders/1_L8p-mH2W383LspXuYsZPbksA9Hn2eTq). Note that our diffusion training process is based on the [Improved diffusion repository](https://github.com/openai/improved-diffusion).
@@ -46,13 +47,18 @@ pip install -r requirements.txt
 
 - **Download the clean-label indiscriminate poisoned datasets (unlearnable datasets)**
   - Please download 8 types of CIFAR-10 unlearnable datasets at [unlearnable-examples](https://drive.google.com/drive/folders/1KzHl0H-CfkXeBqyLhIw8l1NimQTzQx1_).
-  - Save these unlearnable datasets in ```ECLIPSE/poisoned_data/cifar10```
+  - Save these poisoned datasets in ```ECLIPSE/poisoned_data/cifar10```
 
-
-
-
-
-
+- **Perform diffusion purification on poisoned datasets, e.g., EM dataset**
+```shell
+python purification.py --poison EM
+```
+**********************************************************************************************
+**********************************************************************************************
+- **Route 2: Or you can directly download the purified datasets to use:**
+  - Please download 8 types of CIFAR-10 purified datasets at [unlearnable-examples](https://drive.google.com/drive/folders/1KzHl0H-CfkXeBqyLhIw8l1NimQTzQx1_).
+  - Save these poisoned datasets in ```ECLIPSE/poisoned_data/cifar10```
+**********************************************************************************************
 
 
 
