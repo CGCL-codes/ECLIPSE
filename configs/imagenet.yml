@@ -1,0 +1,25 @@
+data:
+    dataset: "ImageNet"
+    category: "imagenet"
+
+model:
+#    attention_resolutions: '32,16,8'
+    attention_resolutions: '16, 8'
+    class_cond: False
+    diffusion_steps: 4000
+    rescale_timesteps: True
+    timestep_respacing: '4000'  # Modify this value to decrease the number of timesteps.
+    image_size: 64
+    learn_sigma: True
+    noise_schedule: 'cosine'
+    num_channels: 128
+#    num_head_channels: 64
+    num_res_blocks: 3
+#    use_scale_shift_norm: True
+#    resblock_updown: True
+#    use_fp16: True
+#    use_scale_shift_norm: True
+
+sampling:
+    batch_size: 10
+    last_only: True

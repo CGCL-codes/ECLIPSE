@@ -1,0 +1,20 @@
+data:
+    dataset: "CIFAR 10"
+    category: "cifar10"
+
+model:
+    attention_resolutions: '16,8'
+    class_cond: False
+    diffusion_steps: 4000
+    rescale_timesteps: True
+    timestep_respacing: '4000'  # Modify this value to decrease the number of timesteps.
+    image_size: 32
+    learn_sigma: True
+    noise_schedule: 'cosine'
+    num_channels: 128
+    num_res_blocks: 3
+    use_scale_shift_norm: True
+
+sampling:
+    batch_size: 32
+    last_only: True
