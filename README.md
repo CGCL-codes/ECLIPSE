@@ -61,7 +61,7 @@ python purification.py --poison EM
   - Note: The poisoned and purified datasets by model-dependent unlearnable schemes including EM, REM, EFP, and SEP are all crafted based on ResNet18 architecture.
 **********************************************************************************************
 
-- **Perform Training on Purified Datasets with Lightweight Corruption Compensation Module)**
+- **Perform Training on Purified Datasets with Lightweight Corruption Compensation Module**
 ```shell
 python train.py --poison EM --arch resnet18 --pure
 ```
