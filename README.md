@@ -19,6 +19,7 @@ In this research, we propose a more universally effective, more practical, and r
 ## Latest Update
 | Date       | Event    |
 |------------|----------|
+| **2024/06/17** | We have released the paper of ECLIPSE!  |
 | **2024/06/16** | We have released the implementation of ECLIPSE!  |
 | **2024/06/14** | ECLIPSE is acccepted by ESORICS 2024!  |
 
