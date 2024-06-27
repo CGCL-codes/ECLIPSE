@@ -72,3 +72,12 @@ Note that the final test accuracy result indicates the defense effectiveness of 
 Some of our codes are built upon [diffpure](https://github.com/NVlabs/DiffPure).
 
 ## BibTex
+If you find ECLIPSE both interesting and helpful, please consider citing us in your research or publications:
+```bibtex
+@inproceedings{wang2024eclipse,
+  title={ECLIPSE: Expunging Clean-label Indiscriminate Poisons via Sparse Diffusion Purification},
+  author={Wang, Xianlong and Hu, Shengshan and Zhang Yechao and Zhou Ziqi and Zhang, Leo Yu and Xu, Peng and Wan, Wei and Jin, Hai},
+  booktitle={Proceedings of the 29th European Symposium on Research in Computer Security (ESORICS'24)},
+  year={2024}
+}
+```
